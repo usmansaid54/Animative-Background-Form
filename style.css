@@ -91,7 +91,8 @@ label {
   pointer-events: none;
   transition: all ease-in-out 0.5s;
 }
-.input:focus + label {
+.input:focus + label,
+.input:not(:placeholder-shown) + label{
   transform: translateY(-18px);
   font-size: 14px;
   color: #7c7c7c;
